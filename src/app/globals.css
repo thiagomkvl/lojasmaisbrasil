@@ -1170,3 +1170,80 @@ img { max-width: 100%; }
   }
 }
 
+
+
+/* =====================================================
+   CATÁLOGO PÚBLICO
+   ===================================================== */
+
+.store-catalog {
+  min-height: 70vh;
+  padding: 85px 0 110px;
+  background:
+    linear-gradient(
+      180deg,
+      #f8fafc,
+      #ffffff
+    );
+}
+
+.store-catalog-heading {
+  max-width: 680px;
+  margin-bottom: 45px;
+}
+
+.store-catalog-heading h1 {
+  margin: 10px 0 12px;
+  color: #101827;
+  font-size: clamp(42px, 5vw, 62px);
+  letter-spacing: -.055em;
+}
+
+.store-catalog-heading p {
+  margin: 0;
+  color: #7b8798;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.store-catalog-empty {
+  padding: 70px 30px;
+  border: 1px dashed #dce3eb;
+  border-radius: 24px;
+  text-align: center;
+  background: #fff;
+}
+
+.store-catalog-empty h2 {
+  margin: 0 0 8px;
+  font-size: 24px;
+}
+
+.store-catalog-empty p {
+  margin: 0;
+  color: #8994a5;
+  font-size: 12px;
+}
+
+.store-product-old-price {
+  display: block;
+  margin: 4px 0 2px;
+  color: #9aa3af;
+  font-size: 11px;
+}
+
+.store-product-no-image {
+  color: #9ba5b4;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+@media (max-width: 620px) {
+  .store-catalog {
+    padding: 55px 0 80px;
+  }
+
+  .store-catalog-heading h1 {
+    font-size: 40px;
+  }
+}

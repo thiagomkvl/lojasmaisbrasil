@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Brand } from "@/components/Brand";
+import { HomeProducts } from "@/components/store/HomeProducts";
 import { formatBRL, product } from "@/data/product";
 
 export default function HomePage() {
@@ -11,16 +12,26 @@ export default function HomePage() {
       {/* TOP BAR */}
       <div className="commerce-topbar">
         <div className="container commerce-topbar-inner">
+
           <div className="commerce-topbar-left">
             <span>Compra 100% online</span>
             <span>Envio para todo o Brasil</span>
           </div>
 
           <div className="commerce-topbar-right">
-            <Link href="/contato">Atendimento</Link>
-            <Link href="/garantia">Garantia</Link>
-            <span>Minha conta</span>
+            <Link href="/contato">
+              Atendimento
+            </Link>
+
+            <Link href="/garantia">
+              Garantia
+            </Link>
+
+            <span>
+              Minha conta
+            </span>
           </div>
+
         </div>
       </div>
 
@@ -29,18 +40,25 @@ export default function HomePage() {
       <header className="commerce-header">
         <div className="container commerce-header-inner">
 
-          <Link href="/" className="commerce-logo">
+          <Link
+            href="/"
+            className="commerce-logo"
+          >
             <Brand />
           </Link>
 
           <nav className="commerce-main-nav">
-            <Link href="/" className="active">
+
+            <Link
+              href="/"
+              className="active"
+            >
               Início
             </Link>
 
-            <a href="#produtos">
+            <Link href="/produtos">
               Produtos
-            </a>
+            </Link>
 
             <a href="#destaques">
               Destaques
@@ -53,17 +71,26 @@ export default function HomePage() {
             <Link href="/contato">
               Contato
             </Link>
+
           </nav>
 
+
           <div className="commerce-support">
+
             <div className="commerce-support-icon">
               ?
             </div>
 
             <div>
-              <strong>Precisa de ajuda?</strong>
-              <span>Fale com nosso atendimento</span>
+              <strong>
+                Precisa de ajuda?
+              </strong>
+
+              <span>
+                Fale com nosso atendimento
+              </span>
             </div>
+
           </div>
 
         </div>
@@ -76,13 +103,17 @@ export default function HomePage() {
         <div className="container commerce-search">
 
           <button className="commerce-category-button">
-            <span className="commerce-menu-icon">☰</span>
+
+            <span className="commerce-menu-icon">
+              ☰
+            </span>
 
             Todas as categorias
 
             <span className="commerce-chevron">
               ↓
             </span>
+
           </button>
 
 
@@ -122,7 +153,10 @@ export default function HomePage() {
               aria-label="Carrinho"
             >
               ◫
-              <span>0</span>
+
+              <span>
+                0
+              </span>
             </button>
 
           </div>
@@ -135,7 +169,9 @@ export default function HomePage() {
       <section className="commerce-hero">
 
         <div className="commerce-hero-decoration commerce-hero-decoration--one" />
+
         <div className="commerce-hero-decoration commerce-hero-decoration--two" />
+
 
         <div className="container commerce-hero-grid">
 
@@ -155,15 +191,28 @@ export default function HomePage() {
             </h2>
 
             <p>
-              Chamadas Bluetooth, notificações, recursos inteligentes
-              e monitoramento em um smartwatch compacto e elegante.
+              Chamadas Bluetooth, notificações,
+              recursos inteligentes e monitoramento
+              em um smartwatch compacto e elegante.
             </p>
 
+
             <div className="commerce-hero-price">
-              <span>A partir de</span>
-              <strong>{formatBRL(product.price)}</strong>
-              <small>ou 12x no cartão</small>
+
+              <span>
+                A partir de
+              </span>
+
+              <strong>
+                {formatBRL(product.price)}
+              </strong>
+
+              <small>
+                ou 12x no cartão
+              </small>
+
             </div>
+
 
             <div className="commerce-hero-actions">
 
@@ -190,13 +239,25 @@ export default function HomePage() {
 
             <div className="commerce-product-glow" />
 
+
             <div className="commerce-floating-tag commerce-floating-tag--top">
-              <span>⚡</span>
+
+              <span>
+                ⚡
+              </span>
+
               <div>
-                <strong>Até 3 dias</strong>
-                <small>de bateria</small>
+                <strong>
+                  Até 3 dias
+                </strong>
+
+                <small>
+                  de bateria
+                </small>
               </div>
+
             </div>
+
 
             <Image
               src="/images/gs10-estelar.png"
@@ -207,17 +268,29 @@ export default function HomePage() {
               className="commerce-hero-watch"
             />
 
+
             <div className="commerce-floating-tag commerce-floating-tag--bottom">
-              <span>✓</span>
+
+              <span>
+                ✓
+              </span>
+
               <div>
-                <strong>Compra segura</strong>
-                <small>90 dias de garantia</small>
+                <strong>
+                  Compra segura
+                </strong>
+
+                <small>
+                  90 dias de garantia
+                </small>
               </div>
+
             </div>
 
           </div>
 
         </div>
+
 
         <div className="commerce-slider-dots">
           <span />
@@ -233,16 +306,19 @@ export default function HomePage() {
         id="destaques"
         className="commerce-promos"
       >
-        <div className="container commerce-promos-grid">
 
+        <div className="container commerce-promos-grid">
 
           <Link
             href="/gs10"
             className="commerce-promo-card commerce-promo-card--large"
           >
+
             <div className="commerce-promo-copy">
 
-              <span>SMARTWATCH</span>
+              <span>
+                SMARTWATCH
+              </span>
 
               <h3>
                 GS10
@@ -263,6 +339,7 @@ export default function HomePage() {
 
             </div>
 
+
             <Image
               src="/images/gs10-estelar.png"
               alt="GS10 Mini"
@@ -276,7 +353,10 @@ export default function HomePage() {
           <article className="commerce-promo-card">
 
             <div className="commerce-promo-copy">
-              <span>ACESSÓRIOS</span>
+
+              <span>
+                ACESSÓRIOS
+              </span>
 
               <h3>
                 Pulseiras
@@ -289,6 +369,7 @@ export default function HomePage() {
               <b>
                 Confira →
               </b>
+
             </div>
 
             <div className="commerce-promo-circle">
@@ -302,7 +383,9 @@ export default function HomePage() {
 
             <div className="commerce-promo-copy">
 
-              <span>VANTAGEM</span>
+              <span>
+                VANTAGEM
+              </span>
 
               <h3>
                 Compra
@@ -310,7 +393,8 @@ export default function HomePage() {
               </h3>
 
               <p>
-                Envio rastreável e suporte especializado.
+                Envio rastreável e suporte
+                especializado.
               </p>
 
               <b>
@@ -322,120 +406,12 @@ export default function HomePage() {
           </article>
 
         </div>
+
       </section>
 
 
       {/* PRODUTOS */}
-      <section
-        id="produtos"
-        className="commerce-products"
-      >
-
-        <div className="container">
-
-          <div className="commerce-section-header">
-
-            <div>
-              <span className="section-kicker">
-                NOSSOS PRODUTOS
-              </span>
-
-              <h2>
-                Produtos em destaque
-              </h2>
-            </div>
-
-            <a href="#produtos">
-              Ver todos →
-            </a>
-
-          </div>
-
-
-          <div className="commerce-product-grid">
-
-            <Link
-              href="/gs10"
-              className="commerce-product-item"
-            >
-
-              <div className="commerce-product-image">
-
-                <span className="commerce-product-badge">
-                  DESTAQUE
-                </span>
-
-                <Image
-                  src="/images/gs10-estelar.png"
-                  alt="GS10 Mini"
-                  width={450}
-                  height={450}
-                />
-
-              </div>
-
-              <div className="commerce-product-content">
-
-                <span>
-                  GS Fit
-                </span>
-
-                <h3>
-                  GS10 Mini
-                </h3>
-
-                <p>
-                  Smartwatch 41 / 42 mm
-                </p>
-
-                <div className="commerce-product-bottom">
-
-                  <div>
-                    <small>
-                      A partir de
-                    </small>
-
-                    <strong>
-                      {formatBRL(product.price)}
-                    </strong>
-                  </div>
-
-                  <span className="commerce-product-arrow">
-                    →
-                  </span>
-
-                </div>
-
-              </div>
-
-            </Link>
-
-
-            {/* PLACEHOLDER FUTUROS PRODUTOS */}
-
-            <article className="commerce-product-item commerce-product-coming">
-
-              <div className="commerce-coming-content">
-                <span>
-                  EM BREVE
-                </span>
-
-                <h3>
-                  Novos produtos
-                </h3>
-
-                <p>
-                  Estamos preparando novas opções para a Lojas +Brasil.
-                </p>
-              </div>
-
-            </article>
-
-          </div>
-
-        </div>
-
-      </section>
+      <HomeProducts />
 
 
       {/* BENEFÍCIOS */}
@@ -447,52 +423,74 @@ export default function HomePage() {
         <div className="container commerce-benefits-grid">
 
           <div>
-            <span>01</span>
+
+            <span>
+              01
+            </span>
 
             <h3>
               Compra segura
             </h3>
 
             <p>
-              Informações claras e uma experiência de compra
-              simples e confiável.
+              Informações claras e uma experiência
+              de compra simples e confiável.
             </p>
+
           </div>
 
+
           <div>
-            <span>02</span>
+
+            <span>
+              02
+            </span>
 
             <h3>
               Envio rastreável
             </h3>
 
             <p>
-              Acompanhe o envio do seu produto durante todo o processo.
+              Acompanhe o envio do seu produto
+              durante todo o processo.
             </p>
+
           </div>
 
+
           <div>
-            <span>03</span>
+
+            <span>
+              03
+            </span>
 
             <h3>
               Suporte especializado
             </h3>
 
             <p>
-              Atendimento antes e depois da sua compra.
+              Atendimento antes e depois
+              da sua compra.
             </p>
+
           </div>
 
+
           <div>
-            <span>04</span>
+
+            <span>
+              04
+            </span>
 
             <h3>
               Garantia
             </h3>
 
             <p>
-              Produtos comercializados com garantia e suporte pós-venda.
+              Produtos comercializados com garantia
+              e suporte pós-venda.
             </p>
+
           </div>
 
         </div>
@@ -506,19 +504,29 @@ export default function HomePage() {
         <div className="container commerce-footer-top">
 
           <div>
+
             <Brand />
 
             <p>
               Tecnologia e produtos selecionados
               para o seu dia a dia.
             </p>
+
           </div>
 
+
           <div>
-            <strong>Lojas +Brasil</strong>
+
+            <strong>
+              Lojas +Brasil
+            </strong>
 
             <Link href="/">
               Início
+            </Link>
+
+            <Link href="/produtos">
+              Produtos
             </Link>
 
             <Link href="/gs10">
@@ -528,17 +536,32 @@ export default function HomePage() {
             <Link href="/contato">
               Contato
             </Link>
+
           </div>
 
-          <div>
-            <strong>Atendimento</strong>
 
-            <span>Suporte</span>
-            <span>Garantia</span>
-            <span>Política de compra</span>
+          <div>
+
+            <strong>
+              Atendimento
+            </strong>
+
+            <span>
+              Suporte
+            </span>
+
+            <span>
+              Garantia
+            </span>
+
+            <span>
+              Política de compra
+            </span>
+
           </div>
 
         </div>
+
 
         <div className="container commerce-footer-bottom">
           © 2026 Lojas +Brasil. Todos os direitos reservados.
